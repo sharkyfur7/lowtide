@@ -86,6 +86,14 @@
 					alt="Synth.Download!"
 				/>
 			</a>
+
+			<a class="border-0" href="https://breq.dev/">
+				<img loading="lazy" alt="dimden" src="/buttons/breq.png" />
+			</a>
+
+			<a class="border-0" href="https://eightyeightthirty.one/">
+				<img loading="lazy" alt="dimden" src="/buttons/eightyeightythirtyone.png" />
+			</a>
 		</div>
 
 		<div class="flex gap-1">
