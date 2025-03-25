@@ -14,7 +14,6 @@
 			This is my webbed site. Sveltekit + tailwind + whatever else is probably overkill for such a
 			simple site but oh well, silly me :3
 		</p>
-		<img src="/buttons/silly.gif" alt="silly" />
 	</section>
 
 	<section>
@@ -64,7 +63,7 @@
 	</section>
 
 	<section>
-		<h1>Buttons!</h1>
+		<h1>Other cool stuff</h1>
 		<div class="flex flex-wrap gap-1">
 			<img loading="lazy" alt="computer" src="/buttons/computer.gif" />
 
@@ -87,6 +86,11 @@
 					alt="Synth.Download!"
 				/>
 			</a>
+		</div>
+
+		<div class="flex gap-1">
+			<img src="/buttons/silly.gif" alt="silly" />
+			<img src="/buttons/monster.gif" alt="monster" />
 		</div>
 	</section>
 
