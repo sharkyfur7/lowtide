@@ -1,0 +1,58 @@
+@import url('$lib/css/fonts.css');
+@import 'tailwindcss';
+
+@theme {
+	--font-heading: 'Inter';
+	--font-content: 'Red Hat Text';
+}
+
+html {
+	font-size: 16px;
+	font-family: var(--font-content), system-ui, sans-serif;
+	@apply bg-slate-800 tracking-wide text-white;
+}
+
+@layer base {
+	h1,
+	h2,
+	h3 {
+		@apply font-heading font-bold;
+	}
+
+	h1 {
+		@apply text-2xl;
+	}
+	h2 {
+		@apply text-xl;
+	}
+
+	a {
+		@apply border-b-1 border-b-blue-200 text-blue-200 hover:border-0;
+	}
+
+	section {
+		@apply w-[100%];
+	}
+
+	article p {
+		@apply mb-2;
+	}
+
+	main {
+		@apply max-w-[640px];
+	}
+}
+
+@layer components {
+	.fancy-text {
+		@apply bg-gradient-to-r from-indigo-500 to-blue-500 bg-clip-text font-black text-transparent;
+	}
+
+	.hyperlink {
+		@apply border-b-blue-200 text-blue-200;
+	}
+}
+
+section + section {
+	margin-top: 8px;
+}
