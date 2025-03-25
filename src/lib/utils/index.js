@@ -9,7 +9,7 @@ export const fetchMarkdownPosts = async () => {
 
 			return {
 				meta: metadata,
-				path: '/blog/' + postSlug
+				path: '/posts/' + postSlug
 			};
 		})
 	);
