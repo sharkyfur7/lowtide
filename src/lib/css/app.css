@@ -31,7 +31,7 @@ html {
 	}
 
 	section {
-		@apply w-[100%];
+		@apply w-full;
 	}
 
 	article p {
@@ -39,7 +39,7 @@ html {
 	}
 
 	main {
-		@apply max-w-[640px];
+		@apply w-full;
 	}
 }
 
@@ -54,5 +54,5 @@ html {
 }
 
 section + section {
-	margin-top: 8px;
+	@apply mt-2;
 }

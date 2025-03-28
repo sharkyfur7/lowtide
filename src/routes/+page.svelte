@@ -96,7 +96,7 @@
 			</a>
 		</div>
 
-		<div class="flex gap-1">
+		<div class="mt-2 flex justify-center gap-1">
 			<img src="/buttons/silly.gif" alt="silly" />
 			<img src="/buttons/monster.gif" alt="monster" />
 		</div>

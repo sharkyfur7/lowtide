@@ -18,7 +18,6 @@
 						</a>
 						<span class="text-xs opacity-50">{post.meta.date}</span>
 					</h2>
-					{post.meta.description}
 				</li>
 			{/each}
 		</ul>
