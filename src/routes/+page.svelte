@@ -1,8 +1,39 @@
 <script>
 	import Header from '$lib/components/header.svelte';
 	import Footer from '$lib/components/footer.svelte';
+	import { onMount } from 'svelte';
 
 	let { data } = $props();
+	let msg = $state('');
+
+	let btn;
+	let inpt;
+
+	onMount(() => {
+		btn = document.getElementById('send_notify_btn');
+		inpt = document.getElementById('send_notify_inpt');
+	});
+
+	$effect(() => {
+		if (msg.length > 0) {
+			btn.style.visibility = 'visible';
+		} else {
+			btn.style.visibility = 'hidden';
+		}
+	});
+
+	async function sendNotif() {
+		const response = await fetch('/api/msg', {
+			method: 'POST',
+			body: JSON.stringify({ msg }),
+			headers: {
+				'Content-Type': 'application/json'
+			}
+		});
+
+		inpt.value = '';
+		msg = '';
+	}
 </script>
 
 <Header></Header>
@@ -44,6 +75,23 @@
 			<a href="https://github.com/sharkyfur7">Github</a>
 			<a href="mailto:sharkyblacktip@protonmail.com">E-Mail</a>
 		</p>
+	</section>
+
+	<section>
+		<span>Your chance to be funny, send me a message:</span>
+
+		<input
+			bind:value={msg}
+			id="send_notify_inpt"
+			class="w-[200px] rounded-sm p-1 outline-1 outline-gray-700 backdrop-brightness-90 focus:outline-blue-500"
+			placeholder="funny message"
+		/>
+		<button
+			onclick={sendNotif}
+			id="send_notify_btn"
+			class="invisible rounded-sm p-1 outline-1 outline-blue-500 backdrop-brightness-110 active:backdrop-brightness-90"
+			>send</button
+		>
 	</section>
 
 	<section class="w-[100%]">
