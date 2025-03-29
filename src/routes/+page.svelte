@@ -142,6 +142,14 @@
 			<a class="border-0" href="https://eightyeightthirty.one/">
 				<img loading="lazy" alt="dimden" src="/buttons/eightyeightythirtyone.png" />
 			</a>
+
+			<a class="border-0" href="https://votehusky.org">
+				<img
+					loading="lazy"
+					alt="vote the husky party"
+					src="https://votehusky.org/buttons/button2.png"
+				/>
+			</a>
 		</div>
 
 		<div class="mt-2 flex justify-center gap-1">
