@@ -4,6 +4,6 @@
 	<nav class="flex justify-center gap-4 font-mono">
 		<a href="/">home</a>
 		<a href="/posts">posts</a>
-		<a class="border-0"><s>gallery</s></a>
+		<a href="/shark">sharks</a>
 	</nav>
 </header>

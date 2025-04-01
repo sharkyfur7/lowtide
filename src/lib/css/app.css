@@ -53,6 +53,12 @@ html {
 	}
 }
 
+@layer shark {
+	.subtitle {
+		@apply text-gray-500 italic;
+	}
+}
+
 section + section {
 	@apply mt-2;
 }

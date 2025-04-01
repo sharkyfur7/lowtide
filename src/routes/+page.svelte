@@ -40,10 +40,11 @@
 
 <main class="flex flex-col items-center">
 	<section>
-		<h1>Welcome</h1>
+		<a href="/shark"><img src="/shark/read.jpg" alt="read about sharks" /></a>
 		<p>
-			This is my webbed site. Sveltekit + tailwind + whatever else is probably overkill for such a
-			simple site but oh well, silly me :3
+			They are really cool creatures, you know. If you'd like to read a bit about them, go to the <a
+				href="/shark">sharks page</a
+			>.
 		</p>
 	</section>
 
