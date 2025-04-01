@@ -49,7 +49,7 @@
 	</section>
 
 	<section>
-		<h1 class="font-mono">> whoami</h1>
+		<h2 class="font-mono">> whoami</h2>
 		<p>I'm Sharky, a shark on the internet 🐟</p>
 		<p>Some mildly interesting things about me:</p>
 		<ul class="list-inside list-disc">
@@ -96,7 +96,7 @@
 	</section>
 
 	<section class="w-[100%]">
-		<h1>Sharks are cool</h1>
+		<h2>Sharks are cool</h2>
 		<iframe
 			style="margin: 0 auto;"
 			width="560"
@@ -112,7 +112,7 @@
 	</section>
 
 	<section>
-		<h1>Other cool stuff</h1>
+		<h2>Other cool stuff</h2>
 		<div class="flex flex-wrap gap-1">
 			<img loading="lazy" alt="computer" src="/buttons/computer.gif" />
 

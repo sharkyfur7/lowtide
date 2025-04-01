@@ -11,7 +11,7 @@
 	</section>
 
 	<article class="h-max">
-		<h1 class="inline">Blacktip reef shark</h1>
+		<h2 class="inline">Blacktip reef shark</h2>
 		<span class="subtitle">(Carcharhinus melanopterus)</span>
 		<p class="text-blue-500"><b>Fun fact:</b> this shark does not meow.</p>
 
