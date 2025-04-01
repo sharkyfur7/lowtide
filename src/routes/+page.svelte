@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import Header from '$lib/components/header.svelte';
 	import Footer from '$lib/components/footer.svelte';
 	import { onMount } from 'svelte';
@@ -6,8 +6,8 @@
 	let { data } = $props();
 	let msg = $state('');
 
-	let btn;
-	let inpt;
+	let btn: any;
+	let inpt: any;
 
 	onMount(() => {
 		btn = document.getElementById('send_notify_btn');
