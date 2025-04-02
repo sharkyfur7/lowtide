@@ -9,7 +9,7 @@
 html {
 	font-size: 16px;
 	font-family: var(--font-content), system-ui, sans-serif;
-	@apply bg-slate-800 tracking-wide text-white;
+	@apply bg-slate-950 tracking-wide text-white;
 }
 
 @layer base {
@@ -41,6 +41,10 @@ html {
 	main {
 		@apply w-full;
 	}
+
+	nav a {
+		@apply border-b-0 transition-all hover:font-bold;
+	}
 }
 
 @layer components {
@@ -49,7 +53,11 @@ html {
 	}
 
 	.hyperlink {
-		@apply border-b-blue-200 text-blue-200;
+		@apply border-b-blue-400 text-blue-400;
+	}
+
+	.content {
+		@apply rounded-md border-2 border-slate-500 bg-slate-900 pt-4 pr-6 pb-4 pl-6;
 	}
 }
 
@@ -60,5 +68,5 @@ html {
 }
 
 section + section {
-	@apply mt-2;
+	@apply mt-4;
 }

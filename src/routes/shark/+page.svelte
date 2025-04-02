@@ -1,6 +1,7 @@
 <script lang="ts">
 	import Header from '$lib/components/header.svelte';
 	import Footer from '$lib/components/footer.svelte';
+	import Hline from '$lib/components/hline.svelte';
 </script>
 
 <Header></Header>
@@ -9,6 +10,8 @@
 	<section class="mb-4 text-center">
 		Shark infested waters? What do you mean? They literally live there!
 	</section>
+
+	<Hline></Hline>
 
 	<article class="h-max">
 		<h2 class="inline">Blacktip reef shark</h2>
@@ -32,7 +35,9 @@
 		</p>
 
 		<p>
-			Unfortunately the <a href="https://www.iucnredlist.org/" target="_blank">IUCN</a>
+			Unfortunately the <a class="hyperlink" href="https://www.iucnredlist.org/" target="_blank"
+				>IUCN</a
+			>
 			has marked the blacktip reef shark as
 			<span class="text-orange-400">vulnerable and declining</span> due to their low reproductive rate
 			and overfishing :(

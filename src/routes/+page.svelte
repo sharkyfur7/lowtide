@@ -1,6 +1,7 @@
 <script lang="ts">
 	import Header from '$lib/components/header.svelte';
 	import Footer from '$lib/components/footer.svelte';
+	import Hline from '$lib/components/hline.svelte';
 	import { onMount } from 'svelte';
 
 	let { data } = $props();
@@ -39,17 +40,23 @@
 <Header></Header>
 
 <main class="flex flex-col items-center">
-	<section>
-		<a href="/shark"><img src="/shark/read.jpg" alt="read about sharks" /></a>
-		<p>
-			They are really cool creatures, you know. If you'd like to read a bit about them, go to the <a
-				href="/shark">sharks page</a
-			>.
-		</p>
-	</section>
+	<span class="text-center">
+		Sharks are really cool creatures. If you'd like to read a bit about them, go to the <a
+			href="/shark">sharks page</a
+		>.
+	</span>
+
+	<Hline></Hline>
 
 	<section>
-		<h2 class="font-mono">> whoami</h2>
+		<img
+			src="/shark/shar.jpg"
+			loading="lazy"
+			alt="happy shark"
+			class="m-1 max-w-[220px] sm:float-right"
+		/>
+
+		<h2>whoami</h2>
 		<p>I'm Sharky, a shark on the internet 🐟</p>
 		<p>Some mildly interesting things about me:</p>
 		<ul class="list-inside list-disc">
@@ -61,7 +68,7 @@
 					{:else}
 						I was listening to
 					{/if}
-					<a class="border-blue-400 text-blue-400" href={data.lastfm.url}>{data.lastfm.track}</a>
+					<a class="hyperlink" href={data.lastfm.url}>{data.lastfm.track}</a>
 					by <span class="text-amber-400">{data.lastfm.artist}</span>
 					{data.lastfm.date}
 				</li>
@@ -73,8 +80,8 @@
 
 		<p>
 			Some links:
-			<a href="https://github.com/sharkyfur7">Github</a>
-			<a href="mailto:sharkyblacktip@protonmail.com">E-Mail</a>
+			<a class="hyperlink" href="https://github.com/sharkyfur7">Github</a>
+			<a class="hyperlink" href="mailto:sharkyblacktip@protonmail.com">E-Mail</a>
 		</p>
 	</section>
 
@@ -95,6 +102,8 @@
 		>
 	</section>
 
+	<Hline></Hline>
+
 	<section class="w-[100%]">
 		<h2>Sharks are cool</h2>
 		<iframe
@@ -111,8 +120,51 @@
 		></iframe>
 	</section>
 
-	<section>
-		<h2>Other cool stuff</h2>
+	<Hline></Hline>
+
+	<section class="">
+		<div class="mb-2 flex justify-center">
+			<map name="noaitxtwidget">
+				<area
+					href="https://baccyflap.com/noai"
+					target="_blank"
+					shape="rect"
+					coords="28,0,219,30"
+					alt="no ai webring"
+					title="no ai webring"
+				/>
+				<area
+					href="https://baccyflap.com/noai/?prv&s=shr"
+					target="_top"
+					shape="rect"
+					coords="0,0,27,30"
+					alt="previous"
+					title="previous"
+				/>
+				<area
+					href="https://baccyflap.com/noai/?rnd"
+					target="_top"
+					shape="rect"
+					coords="221,6,235,25"
+					alt="random"
+					title="random"
+				/>
+				<area
+					href="https://baccyflap.com/noai/?nxt&s=shr"
+					target="_top"
+					shape="rect"
+					coords="239,0,263,30"
+					alt="next"
+					title="next"
+				/>
+			</map>
+			<img
+				usemap="#noaitxtwidget"
+				src="https://baccyflap.com/noai/txtwidget-light.gif"
+				alt="a white rectangular box with a dashed outline with the words 'the no ai webring' in the centre, with a parenthetical question mark next to it and two arrows pointing left and right to either side"
+			/>
+		</div>
+
 		<div class="flex flex-wrap gap-1">
 			<img loading="lazy" alt="computer" src="/buttons/computer.gif" />
 
@@ -157,48 +209,6 @@
 			<img src="/buttons/silly.gif" alt="silly" />
 			<img src="/buttons/monster.gif" alt="monster" />
 		</div>
-	</section>
-
-	<section class="flex justify-center">
-		<map name="noaitxtwidget">
-			<area
-				href="https://baccyflap.com/noai"
-				target="_blank"
-				shape="rect"
-				coords="28,0,219,30"
-				alt="no ai webring"
-				title="no ai webring"
-			/>
-			<area
-				href="https://baccyflap.com/noai/?prv&s=shr"
-				target="_top"
-				shape="rect"
-				coords="0,0,27,30"
-				alt="previous"
-				title="previous"
-			/>
-			<area
-				href="https://baccyflap.com/noai/?rnd"
-				target="_top"
-				shape="rect"
-				coords="221,6,235,25"
-				alt="random"
-				title="random"
-			/>
-			<area
-				href="https://baccyflap.com/noai/?nxt&s=shr"
-				target="_top"
-				shape="rect"
-				coords="239,0,263,30"
-				alt="next"
-				title="next"
-			/>
-		</map>
-		<img
-			usemap="#noaitxtwidget"
-			src="https://baccyflap.com/noai/txtwidget-light.gif"
-			alt="a white rectangular box with a dashed outline with the words 'the no ai webring' in the centre, with a parenthetical question mark next to it and two arrows pointing left and right to either side"
-		/>
 	</section>
 </main>
 
