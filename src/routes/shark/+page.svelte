@@ -41,7 +41,7 @@
 			and overfishing :(
 		</p>
 
-		><img
+		<img
 			class="m-auto sm:float-left sm:m-2"
 			width="250px"
 			src="/shark/blacktip_reef_pup.jpg"
