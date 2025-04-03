@@ -37,6 +37,24 @@
 	}
 </script>
 
+<svelte:head>
+	<title>lowtide dot dev</title>
+	<meta
+		name="description"
+		content="Sharky's personal webpage. The creature. Shark-infested website. lowtide.dev 🐟"
+	/>
+
+	<link rel="canonical" href="https://lowtide.dev" />
+
+	<meta property="og:title" content="lowtide.dev" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://www.lowtide.dev" />
+	<meta
+		property="og:description"
+		content="Sharky's personal webpage. The creature. Shark-infested website. lowtide.dev 🐟"
+	/>
+</svelte:head>
+
 <Header></Header>
 
 <main class="flex flex-col items-center">

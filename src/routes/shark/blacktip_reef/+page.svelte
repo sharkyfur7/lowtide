@@ -4,6 +4,26 @@
 	import Hline from '$lib/components/hline.svelte';
 </script>
 
+<svelte:head>
+	<title>lowtide dot dev | blacktip reef shark</title>
+	<meta
+		name="description"
+		content="The blacktip reef shark is a pretty cool shark that is easily identifiable by the black tips
+			of it's fins."
+	/>
+
+	<link rel="canonical" href="https://www.lowtide.dev/shark/blacktip_reef" />
+
+	<meta property="og:title" content="lowtide dot dev | blacktip reef shark" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://www.lowtide.dev/shark/blacktip_reef" />
+	<meta
+		property="og:description"
+		content="The blacktip reef shark is a pretty cool shark that is easily identifiable by the black tips
+			of it's fins."
+	/>
+</svelte:head>
+
 <Header></Header>
 
 <main>

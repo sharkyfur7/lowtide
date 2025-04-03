@@ -4,6 +4,24 @@
 	import SharkBtn from '$lib/components/shark_btn.svelte';
 </script>
 
+<svelte:head>
+	<title>lowtide dot dev | sharks</title>
+	<meta
+		name="description"
+		content="Come read about sharks! They are such wonderful and misunderstood creatures."
+	/>
+
+	<link rel="canonical" href="https://www.lowtide.dev/shark" />
+
+	<meta property="og:title" content="lowtide dot dev | sharks" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://www.lowtide.dev/shark" />
+	<meta
+		property="og:description"
+		content="Come read about sharks! They are such wonderful and misunderstood creatures."
+	/>
+</svelte:head>
+
 <Header></Header>
 
 <main>

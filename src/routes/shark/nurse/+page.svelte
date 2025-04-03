@@ -4,6 +4,24 @@
 	import Hline from '$lib/components/hline.svelte';
 </script>
 
+<svelte:head>
+	<title>lowtide dot dev | nurse shark</title>
+	<meta
+		name="description"
+		content="The nurse shark is a nocturnal bottom dweller living inshore. And is, unfortunately, classified as vulnerable by the IUCN."
+	/>
+
+	<link rel="canonical" href="https://www.lowtide.dev/shark/nurse" />
+
+	<meta property="og:title" content="lowtide dot dev | nurse shark" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://www.lowtide.dev/shark/nurse" />
+	<meta
+		property="og:description"
+		content="The nurse shark is a nocturnal bottom dweller living inshore. And is, unfortunately, classified as vulnerable by the IUCN."
+	/>
+</svelte:head>
+
 <Header></Header>
 
 <main>
