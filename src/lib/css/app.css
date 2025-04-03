@@ -59,6 +59,10 @@ html {
 	.content {
 		@apply rounded-md border-2 border-slate-500 bg-slate-900 pt-4 pr-6 pb-4 pl-6;
 	}
+
+	.shark_btn {
+		@apply flex justify-center;
+	}
 }
 
 @layer shark {
