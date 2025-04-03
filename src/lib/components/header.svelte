@@ -1,5 +1,5 @@
 <header class="mb-2 flex flex-col items-center">
-	<h1 class="mb-2 text-5xl text-blue-600">lowtide.dev</h1>
+	<a href="/" class="mb-2 border-0 text-5xl font-bold text-blue-600">lowtide.dev</a>
 
 	<nav class="flex justify-center gap-4 italic">
 		<a href="/">home</a>
