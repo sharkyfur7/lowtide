@@ -53,7 +53,7 @@
 			src="/shark/shar.jpg"
 			loading="lazy"
 			alt="happy shark"
-			class="m-1 max-w-[220px] sm:float-right"
+			class="m-auto max-w-[220px] sm:float-right sm:m-1"
 		/>
 
 		<h2>whoami</h2>
@@ -108,8 +108,7 @@
 		<h2>Sharks are cool</h2>
 		<iframe
 			style="margin: 0 auto;"
-			width="560"
-			height="315"
+			class="h-[250px] w-full max-w-[560px] sm:h-[315px]"
 			src="https://www.youtube.com/embed/CbPrRV8b2CI?si=sAtv6yqWckNoShWL"
 			title="YouTube video player"
 			frameborder="0"
@@ -165,7 +164,7 @@
 			/>
 		</div>
 
-		<div class="flex flex-wrap gap-1">
+		<div class="flex flex-wrap justify-center gap-1">
 			<img loading="lazy" alt="computer" src="/buttons/computer.gif" />
 
 			<a class="border-0" href="https://swiftyshq.neocities.org/">

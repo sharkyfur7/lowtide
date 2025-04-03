@@ -18,14 +18,12 @@
 		<span class="subtitle">(Carcharhinus melanopterus)</span>
 		<p class="text-blue-500"><b>Fun fact:</b> this shark does not meow.</p>
 
-		<a href="/shark/blacktip_reef.jpg">
-			<img
-				class="float-right m-2"
-				width="320px"
-				src="/shark/blacktip_reef.jpg"
-				alt="blacktip reef shark"
-			/>
-		</a>
+		<img
+			class="m-auto sm:float-right sm:m-2"
+			width="320px"
+			src="/shark/blacktip_reef.jpg"
+			alt="blacktip reef shark"
+		/>
 
 		<h3>Overview</h3>
 		<p>
@@ -43,14 +41,12 @@
 			and overfishing :(
 		</p>
 
-		<a href="/shark/blacktip_reef_pup.jpg"
-			><img
-				class="float-left m-2"
-				width="250px"
-				src="/shark/blacktip_reef_pup.jpg"
-				alt="blacktip reef shark pups"
-			/></a
-		>
+		><img
+			class="m-auto sm:float-left sm:m-2"
+			width="250px"
+			src="/shark/blacktip_reef_pup.jpg"
+			alt="blacktip reef shark pups"
+		/>
 
 		<h3>Diet</h3>
 		<p>
